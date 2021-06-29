@@ -1,2 +1,2 @@
 # SAS_Practice
-Courseera: Getting Started with SAS Programming
+Coursera: Getting Started with SAS Programming
