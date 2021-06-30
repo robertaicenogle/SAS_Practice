@@ -28,11 +28,6 @@ A SAS program consists of a sequence of steps. Each step in the program performs
 ### Structure of steps
 Each step consists of a sequence of **statements**, and most statements start with the **keyword** that's part of the SAS language. 
 
-### Keywords
-- Data
-- set
-- run
-
 ### Statements
 
 ![](Resources/SAS2.PNG)
