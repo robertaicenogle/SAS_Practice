@@ -48,3 +48,13 @@ Global statements typically define some option or setting for the SAS session. T
 - run
 
 ## SAS Program Syntax
+- SAS tools in the program editor that format code for you
+- You can type unquoted values such as columns, table names or keywords in any case
+
+### Comments
+- Ignored when the program executes
+- Use comments to document code or suppress a portion of code from executing
+- To comment out a single statement ending in a semicolon, you add an asterisk at the beginning of the statement
+- To comment out multiple lines of code, you add slash asterisk at the beginning and asterisk slash at the end of the text you want to comment out.
+
+![](Resources/SAS5.PNG)
