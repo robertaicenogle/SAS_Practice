@@ -25,11 +25,8 @@ A SAS program consists of a sequence of **steps**. Each step in the program perf
 
 ![](Resources/SAS4.PNG)
 
-### Structure of steps
-Each step consists of a sequence of **statements**, and most statements start with the **keyword** that's part of the SAS language. 
-
 ### Statements
-All statements must end with a semicolon.
+Each step consists of a sequence of **statements**, and most statements start with the **keyword** that's part of the SAS language. All statements must end with a semicolon.
 
 ![](Resources/SAS2.PNG)
 
@@ -45,7 +42,7 @@ Global statements typically define some option or setting for the SAS session. T
 
 ![](Resources/SAS3.PNG)
 
-### Keywords
+### List of Keywords
 - Data
 - set
 - run
