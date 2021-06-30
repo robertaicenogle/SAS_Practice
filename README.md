@@ -48,6 +48,7 @@ Global statements typically define some option or setting for the SAS session. T
 - run
 
 ## SAS Program Syntax
+- Spacing is important - and does not affect code function
 - SAS tools in the program editor that format code for you
 - You can type unquoted values such as columns, table names or keywords in any case
 
