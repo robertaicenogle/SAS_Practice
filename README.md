@@ -39,8 +39,9 @@ Types of statements:
 - Assignment statement
 - Print statement
 - Run statement
+- Global statement 
 
-Global statement (can be outside of DATA and PROC steps) - typically define some option or setting for the SAS session. Do not need run statements.
+Global statements typically define some option or setting for the SAS session. They can be outside of DATA and PROC steps, and do not need run statements.
 
 ![](Resources/SAS3.PNG)
 
