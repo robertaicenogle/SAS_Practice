@@ -29,10 +29,11 @@ A SAS program consists of a sequence of steps. Each step in the program performs
 Each step consists of a sequence of **statements**, and most statements start with the **keyword** that's part of the SAS language. 
 
 ### Statements
+All statements must end with a semicolon.
 
 ![](Resources/SAS2.PNG)
 
-All statements must end with a semicolon
+Types of statements:
 - Data statement
 - Set statement
 - Assignment statement
