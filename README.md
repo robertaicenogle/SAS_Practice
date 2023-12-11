@@ -111,10 +111,24 @@ The above SAS Program creates a SAS dataset named READIN in the temporary librar
 
 ![](Resources/CSVImport2.JPG)
 
+DBMS=XLSX informs SAS that the file being imported is a MS Excel file (with .xlsx extension).
+
+Additional Options in PROC IMPORT to Import Excel File
+
 ### Use PROC IMPORT to import an Excel File
 In the example below we are importing Excel file in SAS.
 
 ![](Resources/XLSXImport.JPG)
+
+DBMS=XLSX informs SAS that the file being imported is a MS Excel file (with .xlsx extension).
+
+Additional Options in PROC IMPORT to Import Excel File
+
+![](Resources/XLSXImport2.JPG)
+
+- SHEET: Specify the name of the sheet in the Excel file from which you want to import data. When you use PROC IMPORT without explicitly mentioning the SHEET option, SAS will automatically import the first sheet of the Excel file by default. If you want to import a specific sheet, you need to explicitly specify the sheet name.
+- DATAROW: Specify the row number from which you want SAS to import data. If GETNAMES=YES, the DATAROW value must be greater than or equal to 2. If GETNAMES=NO, the DATAROW value must be greater than or equal to 1.
+- RANGE: Specify the range of Excel file. For e.g. RANGE="Sheet1$A1:D50"
 
 ### Use PROC IMPORT to Import Delimited File, SPSS Files, etc.
 For more information on importing delimited files, and SPSS files, etc., check out https://www.listendata.com/2023/05/proc-import.html, or search google.
