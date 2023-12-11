@@ -151,9 +151,17 @@ Examples :
 - SHEET = "Goal" - To import data from worksheet named Goal.
 5. GETNAMES= YES tells SAS to use the first row of data as variable names.
 - By default, PROC IMPORT uses GETNAMES= YES. If you type GETNAMES= NO, SAS would not read variable names from first row of the sheet.
-
 6. DATAROW= option is used to specify starting row from where SAS would import the data.
 - For example : DATAROW =5 tells SAS to start reading data from row number 5.
 - Note :
 - i. When GETNAMES=YES, DATAROW must be greater than or equal to 2
 - ii. When GETNAMES=NO, DATAROW must be greater than or equal to 1
+7. RANGE= option is used to specify which range SAS would import.
+- Examples :
+- i. RANGE="Sheet1$B2:D10"
+- This would tell SAS to import data from range B2:D10 from sheet1
+- ii. RANGE="Information"
+- This would tell SAS to import data from excel defined name range. In the example shown above, it is Information.
+
+## Example Excel File Import into SAS
+![](Resources/ExcelImport2.JPG)
