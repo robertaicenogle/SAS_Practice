@@ -101,3 +101,7 @@ Arguments of PROC IMPORT : Explanation
 Following is a list of file extensions supported in PROC IMPORT. Specify the value in DBMS=identifier option
 
 ![](Resources/SASImport3.JPG)
+
+### Use PROC IMPORT to Import CSV Files
+
+![](Resources/CSVImport.JPG)
