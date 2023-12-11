@@ -88,3 +88,12 @@ PROC IMPORT is a powerful SAS procedure that allows you to import data from vari
 Syntax of PROC IMPORT is defined below.
 
 ![](Resources/SASImport2.JPG)
+
+Arguments of PROC IMPORT : Explanation
+
+1. DATAFILE: Specify the location of the file to be imported.
+2. OUT: Specify the name to assign to the dataset after it is imported into SAS
+3. DBMS: Define the format of the file being imported. Some of the common values are CSV, EXCEL, TAB, DLM, ACCESS.
+4. REPLACE: Determine whether to replace the existing SAS Dataset. Yes/No.
+5. GETNAMES: Specify whether to use the first row as variable names. By default it it YES. If you set the option as NO, it will tell SAS not to use the first row of data as variable names. In this case SAS assigns variable names as VAR1, VAR2, VAR3 if there are 3 variables.
+6. 
