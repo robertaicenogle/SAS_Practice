@@ -37,7 +37,6 @@ SAS Can:
 - Generate reports and graphs, managed data, or perform complex statistical analyses
 
 ![](Resources/SAS4.PNG)
-
 ### Statements
 Each step consists of a sequence of **statements**, and most statements start with the **keyword** that's part of the SAS language. All statements must end with a semicolon.
 
