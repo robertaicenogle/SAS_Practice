@@ -81,16 +81,10 @@ The basic syntax of PROC IMPORT is as follows. The following SAS code creates a 
 
 ![](Resources/SASImport.JPG)
 
-## SAS Program Syntax
-- Spacing is important - and does not affect code function
-- SAS tools in the program editor that format code for you
-- You can type unquoted values such as columns, table names or keywords in any case
+## PROC IMPORT
+PROC IMPORT is a powerful SAS procedure that allows you to import data from various external file formats into SAS datasets. It simplifies the process of importing data in SAS.
 
-### Comments
-- Ignored when the program executes
-- Use comments to document code or suppress a portion of code from executing
-- To comment out a single statement ending in a semicolon, you add an asterisk at the beginning of the statement
-- To comment out multiple lines of code, you add slash asterisk at the beginning and asterisk slash at the end of the text you want to comment out.
+### Syntax: PROC IMPORT
+Syntax of PROC IMPORT is defined below.
 
-![](Resources/SAS5.PNG)
-
+![](Resources/SASImport2.JPG)
