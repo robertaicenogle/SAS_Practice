@@ -136,16 +136,24 @@ PROC IMPORT is the SAS procedure used to read data from excel into SAS. This sec
 ### PROC IMPORT Syntax
 ![](Resources/ExcelImport.JPG)
 1. DATAFILE=option tells SAS where to find the Excel file that you want to import (Complete filename path). For example : DATAFILE = "C:\Desktop\age.xlsx"
-2. Note: Using SAS OnDemand for Academics follows different steps, syntax.
-3. OUT= option tells SAS to create a dataset with any name of your choice. By default, the imported dataset is saved on WORK library (temporary library)
+- Note: Using SAS OnDemand for Academics follows different steps, syntax.
+2. OUT= option tells SAS to create a dataset with any name of your choice. By default, the imported dataset is saved on WORK library (temporary library)
 - Examples :
 - OUT = Age . In this statement, PROC IMPORT uses the WORK library and dataset name is Age. Please note that OUT = Age is equivalent to OUT = Work.Age .
 - OUT = Input.Age In this statement, PROC IMPORT uses the Input library (Permanent library).
-4. DBMS=option tells SAS the type of file to read.
+3. DBMS=option tells SAS the type of file to read.
 Examples :
 - DBMS = XLS for Excel 97-2003 workbooks
 - DBMS = XLSX for Excel 2007 and above workbooks
-5. SHEET= option is used to specify which sheet SAS would import.
+4. SHEET= option is used to specify which sheet SAS would import.
 - Examples :
 - SHEET = "Sheet1" - To import data from worksheet named sheet1.
 - SHEET = "Goal" - To import data from worksheet named Goal.
+5. GETNAMES= YES tells SAS to use the first row of data as variable names.
+- By default, PROC IMPORT uses GETNAMES= YES. If you type GETNAMES= NO, SAS would not read variable names from first row of the sheet.
+
+6. DATAROW= option is used to specify starting row from where SAS would import the data.
+- For example : DATAROW =5 tells SAS to start reading data from row number 5.
+- Note :
+- i. When GETNAMES=YES, DATAROW must be greater than or equal to 2
+- ii. When GETNAMES=NO, DATAROW must be greater than or equal to 1
