@@ -138,7 +138,14 @@ PROC IMPORT is the SAS procedure used to read data from excel into SAS. This sec
 1. DATAFILE=option tells SAS where to find the Excel file that you want to import (Complete filename path). For example : DATAFILE = "C:\Desktop\age.xlsx"
 2. Note: Using SAS OnDemand for Academics follows different steps, syntax.
 3. OUT= option tells SAS to create a dataset with any name of your choice. By default, the imported dataset is saved on WORK library (temporary library)
+- Examples :
+- OUT = Age . In this statement, PROC IMPORT uses the WORK library and dataset name is Age. Please note that OUT = Age is equivalent to OUT = Work.Age .
+- OUT = Input.Age In this statement, PROC IMPORT uses the Input library (Permanent library).
+4. DBMS=option tells SAS the type of file to read.
 Examples :
-i. OUT = Age . In this statement, PROC IMPORT uses the WORK library and dataset name is Age. Please note that OUT = Age is equivalent to OUT = Work.Age .
-ii. OUT = Input.Age In this statement, PROC IMPORT uses the Input library (Permanent library).
-4. 
+- DBMS = XLS for Excel 97-2003 workbooks
+- DBMS = XLSX for Excel 2007 and above workbooks
+5. SHEET= option is used to specify which sheet SAS would import.
+- Examples :
+- SHEET = "Sheet1" - To import data from worksheet named sheet1.
+- SHEET = "Goal" - To import data from worksheet named Goal.
