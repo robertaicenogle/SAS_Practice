@@ -100,14 +100,4 @@ Arguments of PROC IMPORT : Explanation
 ### File Formats supported in PROC IMPORT
 Following is a list of file extensions supported in PROC IMPORT. Specify the value in DBMS=identifier option
 
-Identifier	Output Data Source	         Extension
-- CSV	      Comma separated values	    .csv
-- DLM	      Delimited file	            .dat or .txt
-- TAB	      Tab delimited values	      .txt
-- XLS       Excel 97-2003 workbooks    	.xls
-- XLSX	    Microsoft Excel 2007 and later	  .xlsx
-- EXCEL	    Supports all versions of MS Excel	.xls, .xlsx, xlsb, .xlsm
-- ACCESS	  Microsoft Access 2000 and later	  .mdb
-- SAV	      SPSS file	                  .sav
-- DTA	      Stata File	                .dta
-- JMP	      JMP files	                  .jmp
+![](Resources/SASImport3.JPG)
