@@ -79,7 +79,7 @@ The Import Data utility automatically show the file information and generate SAS
 ### Import Data using PROC IMPORT instead of Import Data utility
 The basic syntax of PROC IMPORT is as follows. The following SAS code creates a SAS dataset named MYDATA in the temporary library called WORK.
 
-![](Resources/SASImport.PNG)
+![](Resources/SASImport.JPG)
 
 ## SAS Program Syntax
 - Spacing is important - and does not affect code function
