@@ -124,7 +124,6 @@ DBMS=XLSX informs SAS that the file being imported is a MS Excel file (with .xls
 Additional Options in PROC IMPORT to Import Excel File
 
 ![](Resources/XLSXImport2.JPG)
-
 - SHEET: Specify the name of the sheet in the Excel file from which you want to import data. When you use PROC IMPORT without explicitly mentioning the SHEET option, SAS will automatically import the first sheet of the Excel file by default. If you want to import a specific sheet, you need to explicitly specify the sheet name.
 - DATAROW: Specify the row number from which you want SAS to import data. If GETNAMES=YES, the DATAROW value must be greater than or equal to 2. If GETNAMES=NO, the DATAROW value must be greater than or equal to 1.
 - RANGE: Specify the range of Excel file. For e.g. RANGE="Sheet1$A1:D50"
