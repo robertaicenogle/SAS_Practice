@@ -165,3 +165,11 @@ Examples :
 
 ## Example Excel File Import into SAS
 ![](Resources/ExcelImport2.JPG)
+1. DATAFILE= "C:\age.xlsx" tells SAS where to find the Excel file that you want to import. Use XLS for MS Excel 97-2003
+2. Note: In SAS Studio, DATAFILE = "/home/username/age.xlsx"
+3. OUT= WORK.age tells SAS to create a dataset named age stored in WORK library
+4. DBMS= XLSX tells SAS the XLSX (Excel 2007 and above) format file to read.
+5. REPLACE is used to overwrite the age dataset if it exists already.
+6. SHEET= "Sheet1" tells SAS to import data from Sheet1.
+7. GETNAMES="YES" tells SAS to use the first row of data as variable names.
+
