@@ -53,10 +53,8 @@ Global statements typically define some option or setting for the SAS session. T
 
 ![](Resources/SAS3.PNG)
 
-### List of Keywords
-- Data
-- set
-- run
+### How to Import Data
+
 
 ## SAS Program Syntax
 - Spacing is important - and does not affect code function
