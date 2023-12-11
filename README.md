@@ -103,5 +103,12 @@ Following is a list of file extensions supported in PROC IMPORT. Specify the val
 ![](Resources/SASImport3.JPG)
 
 ### Use PROC IMPORT to Import CSV Files
+A simple example to import a CSV file into SAS.
 
 ![](Resources/CSVImport.JPG)
+
+The above SAS Program creates a SAS dataset named READIN in the temporary library (WORK). DBMS=CSV tells SAS that the file being imported is a CSV file. To see the imported file in RESULTS window, you can use PROC PRINT procedure. See the SAS program below.
+
+![](Resources/CSVImport2.JPG)
+
+
