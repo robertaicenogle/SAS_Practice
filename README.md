@@ -111,4 +111,12 @@ The above SAS Program creates a SAS dataset named READIN in the temporary librar
 
 ![](Resources/CSVImport2.JPG)
 
+### Use PROC IMPORT to import an Excel File
+In the example below we are importing Excel file in SAS.
+
+![](Resources/XLSXImport.JPG)
+
+### Use PROC IMPORT to Import Delimited File, SPSS Files, etc.
+For more information on importing delimited files, and SPSS files, etc., check out https://www.listendata.com/2023/05/proc-import.html, or search google.
+
 
