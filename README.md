@@ -130,4 +130,8 @@ Additional Options in PROC IMPORT to Import Excel File
 ### Use PROC IMPORT to Import Delimited File, SPSS Files, etc.
 For more information on importing delimited files, and SPSS files, etc., check out https://www.listendata.com/2023/05/proc-import.html, or search google.
 
+## Importing EXCEL Data into SAS
+PROC IMPORT is the SAS procedure used to read data from excel into SAS. This section goes more in-depth on how to import excel data to SAS with PROC IMPORT.
 
+### PROC IMPORT Syntax
+![](Resources/ExcelImport.JPG)
