@@ -96,4 +96,18 @@ Arguments of PROC IMPORT : Explanation
 3. DBMS: Define the format of the file being imported. Some of the common values are CSV, EXCEL, TAB, DLM, ACCESS.
 4. REPLACE: Determine whether to replace the existing SAS Dataset. Yes/No.
 5. GETNAMES: Specify whether to use the first row as variable names. By default it it YES. If you set the option as NO, it will tell SAS not to use the first row of data as variable names. In this case SAS assigns variable names as VAR1, VAR2, VAR3 if there are 3 variables.
-6. 
+
+### File Formats supported in PROC IMPORT
+Following is a list of file extensions supported in PROC IMPORT. Specify the value in DBMS=identifier option
+
+Identifier	Output Data Source	         Extension
+- CSV	      Comma separated values	    .csv
+- DLM	      Delimited file	            .dat or .txt
+- TAB	      Tab delimited values	      .txt
+- XLS       Excel 97-2003 workbooks    	.xls
+- XLSX	    Microsoft Excel 2007 and later	  .xlsx
+- EXCEL	    Supports all versions of MS Excel	.xls, .xlsx, xlsb, .xlsm
+- ACCESS	  Microsoft Access 2000 and later	  .mdb
+- SAV	      SPSS file	                  .sav
+- DTA	      Stata File	                .dta
+- JMP	      JMP files	                  .jmp
