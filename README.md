@@ -8,6 +8,9 @@ This repo follows the Coursera Getting Started with SAS Programming course.
 SAS® OnDemand for Academics Dashboard
 - https://welcome.oda.sas.com/home
 
+Listendata Tutorial
+- https://www.listendata.com/p/sas-tutorials.html
+
 ## Data Setup
 For the initial data setup, I downloaded the zip file from coursera, and ran the SAS program CourseraStartupCode.SAS. Both are in the github repo.
 
@@ -53,8 +56,34 @@ Global statements typically define some option or setting for the SAS session. T
 
 ![](Resources/SAS3.PNG)
 
-### How to Import Data
+## How to Import Data
+### How to Upload Data to SAS Ondemand for Academics
+Uploading files allows you to use files stored on your computer within the SAS program. The file can be in any format, and does not need to be in the SAS data file formate, .sas7bdat. 
 
+To use a file saved on your computer, follow these two simple steps:
+- First, upload the file to your SAS OnDemand for Academics account
+- Second, import the uploaded file using either Import Data utility or PROC IMPORT procedure.
+
+### Using the Import Data utility
+1. Go to the desired folder where you want to import the file. It is located on the left-hand side of the screen under Server Files and Folders pane.
+2. Right click on the folder and then click on Upload Files.
+3. Click on Choose Files and then locate and select the file you want to import. Then click on Upload button
+4. Once done, the file should be appeared in the folder you selected in step 1.
+5. In the folder where file is imported, locate the imported datafile and then right click on it and select the Import Data option.
+6. Click on the Run button to start importing.
+7. SAS Studio will import the CSV file and create a new dataset. By default, the imported dataset will be available in the WORK library.
+
+
+The Import Data utility automatically show the file information and generate SAS code for importing.
+
+### Import Data using PROC IMPORT instead of Import Data utility
+The basic syntax of PROC IMPORT is as follows. The following SAS code creates a SAS dataset named MYDATA in the temporary library called WORK.
+
+PROC IMPORT DATAFILE='/home/deepanshu88us0/mydata/customers.csv'
+	DBMS=CSV
+	OUT=WORK.MYDATA;
+	GETNAMES=YES;
+RUN;
 
 ## SAS Program Syntax
 - Spacing is important - and does not affect code function
