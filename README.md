@@ -15,6 +15,17 @@ For the initial data setup, I downloaded the zip file from coursera, and ran the
 ## High-level look at the structure of SAS programs
 A SAS program consists of a sequence of **steps**. Each step in the program performs a specific task. There are two kinds of steps in SAS programs: DATA steps and PROC or procedure steps. A SAS program can contain any combination of DATA steps and PROC steps depending on the tasks you want to perform. DATA and PROC steps get their name from the **key word** that begins the first statement in the step, DATA or Proc. Most apps end with a run statement, and a few PROC steps and with a quit statement. If you don't use a run statement at the end of a step, the beginning of a new DATA or PROC step signals the end of the previous step.
 
+### What SAS Can Do
+SAS Can:
+- allow you to enter, retrieve, and manager your data easily
+- read data from various external sources - Excel, CSV, Text Files, Databases, Webpages, etc.
+- explore and manipulate data in SAS
+- analyze your data statistically and mathematically. Includes various statistical techniques
+- generate graphs and tables
+- run SQL queries on SAS datasets
+- automate repetitive tasks with SAS Macros
+- develop new software applications
+
 ### DATA Steps
 - Generally reads data from an input source, processes it, and creates a SAS table
 - Might also filter rows, compute new columns, join tables, and perform other data manipulations
@@ -59,3 +70,4 @@ Global statements typically define some option or setting for the SAS session. T
 - To comment out multiple lines of code, you add slash asterisk at the beginning and asterisk slash at the end of the text you want to comment out.
 
 ![](Resources/SAS5.PNG)
+
