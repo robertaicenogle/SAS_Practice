@@ -186,3 +186,8 @@ Suppose variable names are placed at second row in excel sheet.
 
 ### Importing only specified columns from excel file
 ![](Resources/ExcelImport5.JPG)
+- The OUT = filename followed by KEEP= statement is used to retain the desired variables.
+- In the example shown above, we retained four variables ID,X,Y and Z.
+
+In the same way, you can use DROP= statement to remove the variables that you don't want to retain.
+![](Resources/ExcelImport6.JPG)
