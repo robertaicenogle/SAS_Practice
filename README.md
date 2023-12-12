@@ -207,3 +207,12 @@ In the same way, you can use DROP= statement to remove the variables that you do
 
 In the example below, Range A1:C10 is selected and then type Info in the name box and Press Enter.
 ![](Resources/ExcelImport9.JPG)
+- RANGE="Info" tells SAS to import data from excel using user defined named range Info.
+
+### Rename Columns while Importing
+The variable names can be renamed using RENAME= option next to OUT= option.
+![](Resources/ExcelImport10.JPG)
+
+###
+
+![](Resources/ExcelImport11.JPG)
