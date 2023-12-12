@@ -198,3 +198,12 @@ In the same way, you can use DROP= statement to remove the variables that you do
 
 ### Importing Data from Excel based on Specified Range
 ![](Resources/ExcelImport8.JPG)
+- RANGE="Sheet1$B4:E100" tells SAS to import data from range B4:E100 from sheet1.
+
+### Importing Data from Excel based on Named Range
+- Range Name: In MS Excel, it is a name that represents a cell, range of cells. You can create your own defined name.
+- Creating a range name is very simple. Select a cell or range of cells and Click on the Name box above Column A and Type any name you want and Press Enter.
+- Creating a range name is very simple. Select a cell or range of cells and Click on the Name box above Column A and Tye any name you want and Press Enter.
+
+In the example below, Range A1:C10 is selected and then type Info in the name box and Press Enter.
+![](Resources/ExcelImport9.JPG)
