@@ -163,7 +163,7 @@ Examples :
 - ii. RANGE="Information"
 - This would tell SAS to import data from excel defined name range. In the example shown above, it is Information.
 
-## Examples Excel File Imports into SAS
+### Example Excel File Import into SAS
 ![](Resources/ExcelImport2.JPG)
 1. DATAFILE= "C:\age.xlsx" tells SAS where to find the Excel file that you want to import. Use XLS for MS Excel 97-2003
 2. Note: In SAS Studio, DATAFILE = "/home/username/age.xlsx"
@@ -178,7 +178,7 @@ Examples :
 - DATAROW=5 tells SAS to start reading data from row number 5.
 - In this case, variable (column) names would be pulled from first row but column values would be extracted from row 5.
 
-### Importing (or removing) variable name from other than first row
+### Importing or removing variable name from other than first row
 Suppose variable names are placed at second row in excel sheet.
 ![](Resources/ExcelImport4.JPG)
 - NAMEROW=2 tells SAS to extract variable names from second row and STARTROW=3 is used to pull values from third row.
@@ -191,3 +191,10 @@ Suppose variable names are placed at second row in excel sheet.
 
 In the same way, you can use DROP= statement to remove the variables that you don't want to retain.
 ![](Resources/ExcelImport6.JPG)
+
+### Importing only rows that have non-missing data for all the variables
+![](Resources/ExcelImport7.JPG)
+- In the example shown above, WHERE= statement is used to delete all the rows that have only missing data on variables x,y and z.
+
+### Importing Data from Excel based on Specified Range
+![](Resources/ExcelImport8.JPG)
