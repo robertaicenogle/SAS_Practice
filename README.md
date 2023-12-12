@@ -216,3 +216,8 @@ The variable names can be renamed using RENAME= option next to OUT= option.
 
 ### Importing an Excel File from Website into SAS
 ![](Resources/ExcelImport12.JPG)
+- SAS provides a method for extracting data from web pages by procedure named PROC HTTP.
+- This method makes it easy to read data from web pages.
+- In this case, variable name starts from row number 3 in datafile and data values start from row4 onwards.
+- To import CSV file from website, you just need to change the DBMS=XLS to DBMS=CSV.
+- 
