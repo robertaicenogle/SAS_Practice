@@ -178,7 +178,7 @@ Examples :
 - DATAROW=5 tells SAS to start reading data from row number 5.
 - In this case, variable (column) names would be pulled from first row but column values would be extracted from row 5.
 
-### Importing variable name from other than first row
+### Importing (or removing) variable name from other than first row
 Suppose variable names are placed at second row in excel sheet.
 ![](Resources/ExcelImport4.JPG)
 - NAMEROW=2 tells SAS to extract variable names from second row and STARTROW=3 is used to pull values from third row.
