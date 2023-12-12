@@ -163,7 +163,7 @@ Examples :
 - ii. RANGE="Information"
 - This would tell SAS to import data from excel defined name range. In the example shown above, it is Information.
 
-## Example Excel File Import into SAS
+## Examples Excel File Imports into SAS
 ![](Resources/ExcelImport2.JPG)
 1. DATAFILE= "C:\age.xlsx" tells SAS where to find the Excel file that you want to import. Use XLS for MS Excel 97-2003
 2. Note: In SAS Studio, DATAFILE = "/home/username/age.xlsx"
@@ -173,3 +173,5 @@ Examples :
 6. SHEET= "Sheet1" tells SAS to import data from Sheet1.
 7. GETNAMES="YES" tells SAS to use the first row of data as variable names.
 
+### Importing an excel file from specified row
+![](Resources/ExcelImport3.JPG)
