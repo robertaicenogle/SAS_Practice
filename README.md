@@ -311,3 +311,4 @@ You can use the following DBMS options to export data to different file formats:
 - Specify dbms=DTA to export data as a Stata file.
 - Specify dbms=ACCESSCS to export data as a MS Access file.
 
+### How to Export SAS Data to Excel File
