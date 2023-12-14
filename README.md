@@ -205,7 +205,7 @@ In the same way, you can use DROP= statement to remove the variables that you do
 - Creating a range name is very simple. Select a cell or range of cells and Click on the Name box above Column A and Type any name you want and Press Enter.
 - Creating a range name is very simple. Select a cell or range of cells and Click on the Name box above Column A and Tye any name you want and Press Enter.
 
-In the example below, Range A1:C10 is selected and then type Info in the name box and Press Enter.
+- In the example below, Range A1:C10 is selected and then type Info in the name box and Press Enter.
 ![](Resources/ExcelImport9.JPG)
 - RANGE="Info" tells SAS to import data from excel using user defined named range Info.
 ![](Resources/ExcelImport10.JPG)
