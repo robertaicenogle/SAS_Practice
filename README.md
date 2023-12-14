@@ -226,4 +226,23 @@ This tutorial explains how to import CSV files into SAS, along with examples.
 
 ### Syntax to import CSV file into SAS
 You can use PROC IMPORT to import a CSV files into SAS. The syntax of PROC IMPORT is as follows:
-![](Resources/CSVImport.JPG)
+![](Resources/CSVImport3.JPG)
+- OUT: Specify name of the dataset to be imported into SAS
+- DATAFILE: File location of CSV file which you want to import
+- DMBS: Specify CSV Format
+- REPLACE: Optional argument. If the file already exists, replace it.
+- GETNAMES: Optional argument. By default, it takes first row as variable names. If the file doesn't have a header,set GETNAMES=NO.
+
+### Example 1: Import Data from CSV File into SAS
+- Suppose you have data in CSV file named customers.csv. You can import it into SAS using the code below.
+![](Resources/CSVImport4.JPG)
+- The code above uses the PROC IMPORT procedure in SAS to import a CSV file located at "/home/deepanshu88us0/mydata/customers.csv".
+- The imported data will be stored in a dataset named "newdata".
+- The DBMS option is set to CSV, telling SAS the file format is CSV.
+- The REPLACE option is specified, which means that if a dataset with the same name already exists, it will be replaced.
+- The GETNAMES option is set to YES, indicating that the first row of the CSV file contains variable names. It is by default so you can exclude this option if you want.
+- To view and print the dataset, you can use proc print data=newdata;
+
+### Example 2: Import Data from CSV File without Header into SAS
+- If your CSV file does not have header, you can use GETNAMES=NO option in PROC IMPORT.
+![](Resources/CSVImport5.JPG)
