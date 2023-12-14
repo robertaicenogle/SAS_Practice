@@ -1,8 +1,8 @@
-# SAS_Practice
-Coursera: Getting Started with SAS Programming
+# SAS Intro & Importing Data
+Getting Started with SAS Programming.
 
 ## Repo Overview
-This repo follows the Coursera Getting Started with SAS Programming course.
+This repo provides an overview of SAS programming.
 - https://www.coursera.org/learn/sas-programming-basics/home/welcome
 
 SAS® OnDemand for Academics Dashboard
@@ -247,6 +247,9 @@ You can use PROC IMPORT to import a CSV files into SAS. The syntax of PROC IMPOR
 - If your CSV file does not have header, you can use GETNAMES=NO option in PROC IMPORT.
 ![](Resources/CSVImport5.JPG)
 
-### More CSV Import Options
-For more CSV Import Options, see https://www.listendata.com/p/sas-tutorials.html, or google it.
+## Dataline Statements
+The DATALINES statement in SAS is used to create a dataset. You can input data directly into a SAS program using the DATALINES statement, without the need for an external data file.
 
+### Syntax of DATALINES statement
+The syntax of DATALINES statement is as follows.
+![](Resources/DatalinesImport.JPG)
