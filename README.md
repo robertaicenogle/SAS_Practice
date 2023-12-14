@@ -246,3 +246,7 @@ You can use PROC IMPORT to import a CSV files into SAS. The syntax of PROC IMPOR
 ### Example 2: Import Data from CSV File without Header into SAS
 - If your CSV file does not have header, you can use GETNAMES=NO option in PROC IMPORT.
 ![](Resources/CSVImport5.JPG)
+
+### More CSV Import Options
+For more CSV Import Options, see https://www.listendata.com/p/sas-tutorials.html, or google it.
+
