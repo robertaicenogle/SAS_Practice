@@ -268,3 +268,46 @@ The syntax of DATALINES statement is as follows.
 ### How to read a large character variable in SAS
 By default, the length of a character variable is set at the first occurrence of the variable. If you want to read a large character variable, you can use colon modifier : which tells SAS to read variable until there is a space or other delimiter. The $20. indicates the length of the character variable.
 ![](Resources/DatalinesImport3.JPG)
+
+## SAS CARDS STATEMENT: LEARN WITH EXAMPLES
+The CARDS statement in SAS is used to create a dataset. You can directly enter data into a SAS program using the CARDS statement, without the need for an external data file.
+
+The CARDS statement is an alternative to the DATALINES statement and serves the same purpose. It is used in the same way as DATALINES to specify inline data within the SAS program.
+
+### Syntax of CARDS statement
+The syntax of CARDS statement is as follows.
+![](Resources/DatalinesImport4.JPG)
+1. DATA new_dataset;: Starts the DATA step and defines a new dataset named new_dataset.
+2. INPUT variable1 $ variable2 variable3;: Specifies the variable names and their data types. In this case, variable1 is a character variable, while variable2 and variable3 are numeric variables.
+3. CARDS;: Indicates the start of the data section.
+4. The lines following CARDS; are the data values for each variable. Each line represents one observation, and the values for each variable are separated by spaces.
+5. RUN;: marks the end of the DATA step and executes it, creating the "new_dataset" dataset.
+
+### Additional Raw Data Import Info
+For more info on reading raw data into SAS, such as characters variables of varying length, visit https://www.listendata.com/p/sas-tutorials.html, or google it.
+
+## How to Export Data
+The following tutorials explain various ways to export SAS data.
+
+## PROC EXPORT: Practical Guide
+PROC EXPORT is used to export SAS datasets to external files in various different formats.
+
+### PROC EXPORT Syntax
+Below is the syntax for PROC EXPORT:
+
+![](Resources/PROCExport.JPG)
+
+- Explanation of PROC EXPORT Syntax
+- data=sas-dataset-name: Name of SAS dataset you want to export.
+- outfile: File location where you want to save file.
+- dbms: File format to use for exported file.
+- replace: Replaces the exported file if it already exists. It is optional argument.
+
+You can use the following DBMS options to export data to different file formats:
+- Specify dbms=XLSX to export data as an Excel file.
+- Specify dbms=CSV to export data as a CSV file.
+- Specify dbms=TAB to export data as a Text file.
+- Specify dbms=SAV to export data as a SPSS file.
+- Specify dbms=DTA to export data as a Stata file.
+- Specify dbms=ACCESSCS to export data as a MS Access file.
+
