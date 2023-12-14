@@ -247,9 +247,24 @@ You can use PROC IMPORT to import a CSV files into SAS. The syntax of PROC IMPOR
 - If your CSV file does not have header, you can use GETNAMES=NO option in PROC IMPORT.
 ![](Resources/CSVImport5.JPG)
 
-## Dataline Statements
+## DATALINES Statements
 The DATALINES statement in SAS is used to create a dataset. You can input data directly into a SAS program using the DATALINES statement, without the need for an external data file.
 
 ### Syntax of DATALINES statement
 The syntax of DATALINES statement is as follows.
+
 ![](Resources/DatalinesImport.JPG)
+
+1. DATA new_dataset;: This line starts the DATA step and defines a new dataset named new_dataset.
+2. INPUT variable1 $ variable2 variable3;: This line specifies the variable names and their data types. In this case, variable1 is a character variable, while variable2 and variable3 are numeric variables.
+3. DATALINES;: This line indicates the start of the data section.
+4. The lines following DATALINES; represent the data values for each variable. Each line represents one observation, and the values for each variable are separated by spaces.
+5. RUN;: This line marks the end of the DATA step and executes it, creating the "new_dataset" dataset.
+6. Note: A dollar sign $ following a variable name indicates that the variable is a character variable.
+
+- Use PROC PRINT procedure to print the dataset
+![](Resources/DatalinesImport2.JPG)
+
+### How to read a large character variable in SAS
+By default, the length of a character variable is set at the first occurrence of the variable. If you want to read a large character variable, you can use colon modifier : which tells SAS to read variable until there is a space or other delimiter. The $20. indicates the length of the character variable.
+![](Resources/DatalinesImport3.JPG)
