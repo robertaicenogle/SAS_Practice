@@ -220,4 +220,10 @@ The variable names can be renamed using RENAME= option next to OUT= option.
 - This method makes it easy to read data from web pages.
 - In this case, variable name starts from row number 3 in datafile and data values start from row4 onwards.
 - To import CSV file from website, you just need to change the DBMS=XLS to DBMS=CSV.
-- 
+
+## How to Import CSV Files into SAS
+This tutorial explains how to import CSV files into SAS, along with examples.
+
+### Syntax to import CSV file into SAS
+You can use PROC IMPORT to import a CSV files into SAS. The syntax of PROC IMPORT is as follows:
+![](Resources/CSVImport.JPG)
